@@ -31,7 +31,7 @@ body {
   .newsletter .content {
     max-width: 650px;
     margin: 0 auto;
-    text-align: center;
+    text-align: left;
     position: relative;
     z-index: 2;
   }
@@ -43,14 +43,14 @@ body {
   }
   
   .newsletter .input-group .form-control {
-    height: 50px;
+    height: 70px;
     border-color: #000;
     border-radius: 17px 0 0 17px; /* Arredonda somente a borda esquerda */
     font-size: 2rem;
   }
   
   .newsletter .input-group .btn {
-    height: 50px;
+    height: 70px;
     border-radius: 0 17px 17px 0; /* Arredonda somente a borda direita */
     background-color: #000;
     color: #fff;
