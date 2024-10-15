@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mudança Contínua do Cursor em Elementos Clicáveis</title>
+  <style>
+    .elemento {
+      width: 500px;
+      height: 200px;
+      background-color: #4CAF50;
+      margin: 100px auto;
+      text-align: center;
+      line-height: 200px;
+      font-size: 20px;
+      color: white;
+      cursor: pointer; 
+    }
+    button, a {
+      margin-top: 20px;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="elemento">Clique em mim</div>
+  <button>Clique no botão</button>
+  <a href="#">Clique no link</a>
+
+  <script>
+    const cursores = ['pointer', 'crosshair', 'help', 'wait', 'text'];
+    let indice = 0;
+
+    const elementosClicaveis = document.querySelectorAll('.elemento, button, a');
+
+    elementosClicaveis.forEach(elemento => {
+      elemento.addEventListener('mouseenter', () => {
+        const intervalo = setInterval(() => {
+          elemento.style.cursor = cursores[indice];
+          indice = (indice + 1) % cursores.length;
+        }, 200);
+
+        elemento.addEventListener('mouseleave', () => {
+          clearInterval(intervalo);
+          elemento.style.cursor = 'default';
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>
