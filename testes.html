@@ -4,72 +4,54 @@
   <link href='https://fonts.googleapis.com/css?family=Iceland' rel='stylesheet'>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mudança Contínua do Cursor em Elementos Clicáveis</title>
+  <title>Impetus</title>
   <style>
-    .elemento {
-      width: 500px;
-      height: 200px;
-      background-color: #4CAF50;
-      margin: 100px auto;
-      text-align: center;
-      line-height: 200px;
-      font-size: 20px;
-      color: white;
-      cursor: pointer; 
-    }
-    button, a {
-      margin-top: 20px;
-      display: block;
-    }
-    
     body{
         font-family: 'Iceland';
         font-size: 30px;
+        background-color: black;
+        color: white;
     }
 
     .header{
-        word-spacing: 120px;
-        margin-left: 1000px;
-        margin-top: -80px;
+        margin-left: -20px;
+        margin-top: 10px;
     }
 
     .logo{
         margin-left: 50px;
     }
+
+    .inicio{
+        margin-left: 600px;
+        margin-top: -75px;
+    }
+
+    .plasma{
+        margin-left: 780px;
+        margin-top: -59px;
+    }
+    
+    .propulsao{
+        margin-left: 976px;
+        margin-top: -59px;
+    }
+
+    .aplicacoes{
+        margin-left: 1190px;
+        margin-top: -59px;
+    }
   </style>
 </head>
 <body>
 
-  <div>
+  <div class="header">
       <h1 class="logo">IMPETUS</h1>
-      <p class="header">Início Propulsão Plasma Aplicações</p>
+      <p class="inicio">Início</p>
+      <p class="plasma">Plasma</p>
+      <p class="propulsao">Propulsão</p>
+      <p class="aplicacoes">Aplicações</p>
   </div>
-
-
-  <div class="elemento">Clique em mim</div>
-  <button>Clique no botão</button>
-  <a href="#">Clique no link</a>
-
-  <script>
-    const cursores = ['pointer', 'crosshair', 'help', 'wait', 'text'];
-    let indice = 0;
-
-    const elementosClicaveis = document.querySelectorAll('.elemento, button, a');
-
-    elementosClicaveis.forEach(elemento => {
-      elemento.addEventListener('mouseenter', () => {
-        const intervalo = setInterval(() => {
-          elemento.style.cursor = cursores[indice];
-          indice = (indice + 1) % cursores.length;
-        }, 200);
-
-        elemento.addEventListener('mouseleave', () => {
-          clearInterval(intervalo);
-          elemento.style.cursor = 'default';
-        });
-      });
-    });
-  </script>
 
 </body>
 </html>
