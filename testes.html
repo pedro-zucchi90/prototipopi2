@@ -1,80 +1,62 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+  <link href='https://fonts.googleapis.com/css?family=Iceland' rel='stylesheet'>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dropdown Customizado</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href='https://fonts.googleapis.com/css?family=Iceland' rel='stylesheet'>
-  <link rel="stylesheet" href="cssdopedro.css"> 
+  <title>Impetus</title>
+  <style>
+    body{
+        font-family: 'Iceland';
+        font-size: 30px;
+        background-color: black;
+        color: white;
+    }
+
+
+    .footer{
+        margin-left: 10px;
+    }
+
+    .logo{
+        margin-left: 50px;
+    }
+
+    .opcoes {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      width: 40%;
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 10px 6% 0 50px;
+    }
+
+  </style>
 </head>
 <body>
 
-  <div class="drop">
-    <div class="dropdown-center">
-      <button class="btn btn-secondary position-absolute start-50 translate-middle dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-        Teste
-      </button>
-      <ul class="dropdown-menu">
-        <li><dd>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</dd></li>
-        <li><dd>"Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."</dd></li>
-      </ul>
-    </div>
+  <div class="header">
+      <h1 class="logo">IMPETUS</h1>
+      <div class="opcoes">
+        <p class="inicio">Início</p>
+        <p class="plasma">Plasma</p>
+        <p class="propulsao">Propulsão</p>
+        <p class="aplicacoes">Aplicações</p>
+      </div>
   </div>
 
-  <section class="newsletter">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-12">
-                <div class="content">
-                    <form>
-                        <h2>ASSINE NOSSA NEWSLETTER</h2>
-                        <div class="input-group">
-                            <input type="email" class="form-control" placeholder="Seu Email">
-                            <button class="btn" type="submit">Enviar</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-  </section>
+  <div class="footer">
+    <p class="logo-ifc">IFC</p>
+    <p class="logo-insta">Instagram</p>
+    <p class="logo-email">E-mail</p>
+    <p class="logo-telefone">Telefone</p>
+  </div>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-  <script>
-    // Definindo diferentes tipos de cursores
-    const cursores = ['pointer', 'crosshair', 'help', 'wait', 'text'];
-    let indice = 0;
-
-    // Função para mudar o cursor continuamente
-    function mudarCursor(elemento) {
-      const intervalo = setInterval(() => {
-        elemento.style.cursor = cursores[indice];
-        indice = (indice + 1) % cursores.length; // Volta para o primeiro cursor após passar por todos
-      }, 200); // Muda o cursor a cada 200ms
-
-      // Quando o mouse sair do elemento, parar a mudança do cursor
-      elemento.addEventListener('mouseleave', () => {
-        clearInterval(intervalo);
-        elemento.style.cursor = 'default'; // Retorna ao cursor padrão
-      });
-    }
-
-    // Selecionando o botão dropdown, os itens da lista e o botão de enviar
-    const dropdownButton = document.querySelector('.dropdown-toggle');
-    const dropdownItems = document.querySelectorAll('.dropdown-menu dd');
-    const enviarButton = document.querySelector('.input-group .btn');
-
-    // Aplicando o evento de 'mouseenter' para o botão dropdown
-    dropdownButton.addEventListener('mouseenter', () => mudarCursor(dropdownButton));
-
-    // Aplicando o evento de 'mouseenter' para cada item da lista
-    dropdownItems.forEach(item => {
-      item.addEventListener('mouseenter', () => mudarCursor(item));
-    });
-
-    // Aplicando o evento de 'mouseenter' para o botão de enviar
-    enviarButton.addEventListener('mouseenter', () => mudarCursor(enviarButton));
-  </script>
 </body>
 </html>
