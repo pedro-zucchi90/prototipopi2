@@ -74,3 +74,35 @@ body {
 .newsletter .input-group .form-control:focus {
   box-shadow: none;
 }
+
+
+body{
+  font-family: 'Iceland';
+  font-size: 30px;
+  background-color: black;
+  color: white;
+}
+
+
+.footer{
+  margin-left: 10px;
+}
+
+.logo{
+  margin-left: 50px;
+}
+
+.opcoes {
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: space-between;
+width: 40%;
+}
+
+.header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin: 10px 6% 0 50px;
+}
