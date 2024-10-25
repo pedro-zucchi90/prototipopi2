@@ -5,6 +5,29 @@ body {
   font-size: 30px;
 }
 
+  /*header*/
+.opcoes {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 40%;
+  font-size: 40px;
+  }
+  
+  .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 6% 0 50px;
+  }
+
+  .logo{
+    margin-left: 6%;
+  }
+  
+
+  /*dropdown*/
 .drop {
   margin-top: 10%;
 }
@@ -92,21 +115,5 @@ body {
   margin-left: 10px;
 }
 
-.logo{
-  margin-left: 50px;
-}
 
-.opcoes {
-display: flex;
-flex-direction: row;
-align-items: center;
-justify-content: space-between;
-width: 40%;
-}
 
-.header {
-display: flex;
-justify-content: space-between;
-align-items: center;
-margin: 10px 6% 0 50px;
-}
