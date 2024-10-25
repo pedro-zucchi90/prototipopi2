@@ -13,6 +13,7 @@ body {
   justify-content: space-between;
   width: 40%;
   font-size: 40px;
+  cursor: pointer;
   }
   
   .header {
@@ -27,7 +28,7 @@ body {
   }
   
 
-  /*dropdown*/
+  /*----------dropdown*/
 .drop {
   margin-top: 10%;
 }
@@ -59,7 +60,7 @@ body {
   color: #fff; /* Cor dos textos dentro de <dd> */
 }
 
-/* Newsletter */
+/*----------Newsletter----------*/
 .newsletter {
   padding: 80px 0;
 }
@@ -110,7 +111,7 @@ body {
 }
 
 
-
+/*----------footer----------*/
 .footer{
   margin-left: 10px;
 }
