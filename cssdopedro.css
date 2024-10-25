@@ -1,6 +1,8 @@
 body {
   font-family: 'Iceland';
   background-color: #000;
+  color: #fff;
+  font-size: 30px;
 }
 
 .drop {
@@ -53,35 +55,37 @@ body {
   font-size: 3rem;
 }
 
+.newsletter .input-group {
+  display: flex;
+  border: 2px solid #fff;
+  border-radius: 17px;
+  overflow: hidden;
+}
+
 .newsletter .input-group .form-control {
+  flex: 1;
   height: 70px;
-  border-color: #fff;
-  border-radius: 17px 0 0 17px; /* Arredonda somente a borda esquerda */
+  border: none;
+  border-radius: 0;
   font-size: 2rem;
+  padding-left: 15px;
 }
 
 .newsletter .input-group .btn {
   height: 70px;
-  border-radius: 0 17px 17px 0; /* Arredonda somente a borda direita */
+  border-radius: 0;
   background-color: #000;
   color: #fff;
   font-weight: 400;
   font-size: 1.5rem;
-  border: 2px solid #fff;
-  border-left: 0;
+  border: none;
+  padding: 0 20px;
 }
 
 .newsletter .input-group .form-control:focus {
   box-shadow: none;
 }
 
-
-body{
-  font-family: 'Iceland';
-  font-size: 30px;
-  background-color: black;
-  color: white;
-}
 
 
 .footer{
