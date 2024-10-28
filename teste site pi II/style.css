@@ -104,3 +104,30 @@ body{
 .footer{
     margin-top: -150px;
 }
+
+.titulo-plasma{
+    margin-left: 560px;
+    margin-top: 200px;
+}
+
+.oq-é-plasma{
+    margin-left: 10px;
+}
+
+.pra-q-usado{
+    margin-left: 660px;
+    margin-top: -1114px;
+}
+
+.input-plasma{
+    margin-left: 200px;
+    margin-top: 30px;
+    background-color: black;
+    border-color: white;
+    width: 900px;
+    height: 60px;
+}
+
+.inputs{
+    margin-top: 200px;
+}
