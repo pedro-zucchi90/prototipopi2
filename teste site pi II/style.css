@@ -3,6 +3,9 @@ body{
     font-size: 30px;
     background-color: black;
     color: white;
+    background-image: url(fundo.jpeg);
+    background-repeat: repeat;
+    background-size: auto;
 }
 
 @media screen and (max-width: 400px){
@@ -105,7 +108,7 @@ body{
     margin-top: -150px;
 }
 
-.titulo-plasma{
+.titulo-conteudo{
     margin-left: 560px;
     margin-top: 200px;
 }
@@ -130,4 +133,14 @@ body{
 
 .inputs{
     margin-top: 200px;
+}
+
+.texto-propulsao{
+    margin-left: 50px;
+    margin-top: 400px;
+}
+
+.mapa-mental{
+    margin-top: 400px;
+    margin-left: 500px;
 }
