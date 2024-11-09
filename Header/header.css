@@ -1,0 +1,33 @@
+/*Body*/
+body {
+    font-family: 'Iceland';
+    background-color: #000;
+    color: #fff;
+    font-size: 30px;
+    background-image: url(fundo\ \(1\).jpeg);
+  }
+
+
+/*header*/
+.opcoes {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 40%;
+    font-size: 40px;
+    cursor: pointer;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 6% 0 50px;
+    position: relative;
+  }
+  
+  .logo {
+    margin-left: 6%;
+    cursor: pointer;
+  }
