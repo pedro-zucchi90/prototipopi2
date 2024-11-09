@@ -1,0 +1,68 @@
+/*Body*/
+body {
+    font-family: 'Iceland';
+    background-color: #000;
+    color: #fff;
+    font-size: 30px;
+    background-image: url(fundo\ \(1\).jpeg);
+  }  
+
+
+/* Newsletter */
+.newsletter {
+    padding: 80px 0;
+    margin-left: 6%;
+    margin-right: 6%;
+  }
+  
+  .newsletter .content {
+    max-width: 100%;
+    text-align: left;
+    position: relative;
+    z-index: 2;
+  }
+  
+  .newsletter .content h2 {
+    color: #fff;
+    margin-bottom: 40px;
+    font-size: 5rem;
+  }
+  
+  .newsletter .content p {
+    color: #fff;
+    margin-bottom: 40px;
+    font-size: 3rem;
+  }
+  
+  .newsletter .input-group {
+    display: flex;
+    border: 2px solid #fff;
+    border-radius: 17px;
+    overflow: hidden;
+  }
+  
+  .newsletter .input-group .form-control {
+    flex: 1;
+    height: 70px;
+    border: none;
+    border-radius: 0;
+    font-size: 2rem;
+    padding-left: 15px;
+    background-color: #000;
+    color: #fff;
+  }
+  
+  .newsletter .input-group .btn {
+    height: 70px;
+    border-radius: 0;
+    background-color: #000;
+    color: #fff;
+    font-weight: 400;
+    font-size: 1.5rem;
+    border: none;
+    padding: 0 20px;
+  }
+  
+  .newsletter .input-group .form-control:focus {
+    box-shadow: none;
+  }
