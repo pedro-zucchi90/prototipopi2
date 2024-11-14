@@ -7,7 +7,7 @@ def buscarArtigo(OqueEuProcuro):
         'q': OqueEuProcuro,
         'page': 1,
         'pageSize': 5,
-        'api_key': '4wkGEfP5XK3FlcXekjLUevfbQBAgrg48fkkiMcRQ'
+        'api_key': 'MyAPIKey'
     }
 
     resposta = requests.get('https://ntrs.nasa.gov/api/citations/search', params=parametros)
