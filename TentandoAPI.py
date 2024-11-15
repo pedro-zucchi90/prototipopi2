@@ -1,20 +1,17 @@
 import requests
 
-pesquisaUser = input("Coloque sua pesquisa aqui: ")
-
-def buscarArtigo(OqueEuProcuro):
-    parametros = {
-        'q': OqueEuProcuro,
+def searchArticle():
+    parameter = {
+        'q': "Plasma Propulsion",
         'page': 1,
-        'pageSize': 5,
-        'api_key': 'MyAPIKey'
+        'api_key': '4wkGEfP5XK3FlcXekjLUevfbQBAgrg48fkkiMcRQ'
     }
 
-    resposta = requests.get('https://ntrs.nasa.gov/api/citations/search', params=parametros)
+    resposta = requests.get('https://ntrs.nasa.gov/api/citations/search', params=parameter)
 
     if resposta.status_code == 200:
         resultados = resposta.json().get('results', [])
-        
+
         if resultados:
             for artigo in resultados:
                 titulo = artigo['title']
@@ -24,4 +21,4 @@ def buscarArtigo(OqueEuProcuro):
         else:
             print("Bah, acho que não deu muito certo essa pesquisa!")
 
-buscarArtigo(pesquisaUser)
+searchArticle()
