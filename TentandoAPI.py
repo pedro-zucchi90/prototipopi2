@@ -4,7 +4,7 @@ def searchArticle():
     parameter = {
         'q': "Plasma Propulsion",
         'page': 1,
-        'api_key': '4wkGEfP5XK3FlcXekjLUevfbQBAgrg48fkkiMcRQ'
+        'api_key': 'MyAPIKey'
     }
 
     resposta = requests.get('https://ntrs.nasa.gov/api/citations/search', params=parameter)
