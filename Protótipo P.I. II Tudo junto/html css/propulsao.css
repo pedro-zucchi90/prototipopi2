@@ -1,0 +1,70 @@
+body {
+    font-family: 'Iceland';
+    background-color: #000;
+    color: #fff;
+    font-size: 30px;
+    background-image: url(fundo\ \(1\).jpeg);
+  }
+
+/*header*/
+.opcoes {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 40%;
+    font-size: 40px;
+    cursor: pointer;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 6% 0 50px;
+    position: relative;
+  }
+  
+  .logo {
+    margin-left: 6%;
+    cursor: pointer;
+  }
+
+  /*---------Footer------------*/
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 6% 0 50px;
+    position: relative;
+  }
+  
+  .opcoesFooter {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 60%;
+    gap: 50px;
+    font-size: 40px;
+    cursor: pointer;
+  }
+  
+  .logoIfc {
+    height: 250px;
+    width: auto;
+    margin-left: 3%;
+  }
+  
+  .opcoesFooter p {
+    display: flex;
+    align-items: center;
+    font-size: 40px;
+    margin: 0 25px;
+  }
+  
+  .opcoesFooter i {
+    margin-left: 15px;
+    font-size: 55px;
+    color: #ffffff;
+  }

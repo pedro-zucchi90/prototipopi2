@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Iceland' rel='stylesheet'>
+    <link rel="stylesheet" href="plasma.css">
+    <title>Impetus</title>
+</head>
+<body>
+    <div class="header">
+        <h1 class="logo" onclick="window.location.href='testes.html'">IMPETUS</h1>
+        <div class="opcoes">
+          <p class="botaoinicio" onclick="window.location.href='testes.html'">Início</p>
+          <p class="botaoplasma" onclick="window.location.href='plasma.html'">Plasma</p>
+          <p class="botaopropulsao" onclick="window.location.href='propulsao.html'">Propulsão</p>
+          <p class="botaoaplicacoes" onclick="window.location.href='aplicacoes.html'">Aplicações</p>
+        </div>
+    </div>
+    
+    <div>
+        <h1 class="titulo-conteudo">Plasma</h1>
+    </div>
+
+    <div class="oq-é-plasma">
+        <h2 class="topico-titulo">O que é?</h2>
+        <p class="topico-texto">Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit.  
+            Etiam eget ligula  eu lectus <br> lobortis condimentum.  Aliquam nonummy <br> auctor massa. 
+            Pellentesque habitant morbi <br> tristique senectus et netus et malesuada  fames <br> ac  
+            turpis egestas. Nulla at risus. Quisque purus <br> magna, auctor  et, sagittis ac, 
+            posuere eu, <br> lectus. Nam mattis, felis ut adipiscing.  Lorem <br> ipsum dolor sit amet, consectetur adipiscing elit. <br>
+            Etiam eget ligula  eu lectus lobortis condimentum. <br> Aliquam nonummy auctor massa. Lorem ipsum dolor <br> sit amet, consectetur adipiscing elit.  
+            Etiam eget ligula <br> eu lectus lobortis condimentum.  Aliquam nonummy <br> auctor massa. 
+            Pellentesque habitant morbi <br> tristique senectus et netus et malesuada  fames <br> ac  
+            turpis egestas. Nulla at risus. Quisque purus <br> magna, auctor  et, sagittis ac, 
+            posuere eu, <br> lectus. Nam mattis, felis ut adipiscing.  Lorem <br> ipsum dolor sit amet, consectetur adipiscing elit. <br>
+            Etiam eget ligula  eu lectus lobortis condimentum. <br> Aliquam nonummy auctor massa.</p>
+    </div>
+
+    <div class="pra-q-usado">
+        <h2 class="topico-titulo">Pra que é usado?</h2>
+        <p class="topico-texto">Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit.  
+            Etiam eget ligula  eu lectus <br> lobortis condimentum.  Aliquam nonummy <br> auctor massa. 
+            Pellentesque habitant morbi <br> tristique senectus et netus et malesuada  fames <br> ac  
+            turpis egestas. Nulla at risus. Quisque purus <br> magna, auctor  et, sagittis ac, 
+            posuere eu, <br> lectus. Nam mattis, felis ut adipiscing.  Lorem <br> ipsum dolor sit amet, consectetur adipiscing elit. <br>
+            Etiam eget ligula  eu lectus lobortis condimentum. <br> Aliquam nonummy auctor massa. Lorem ipsum dolor <br> sit amet, consectetur adipiscing elit.  
+            Etiam eget ligula <br> eu lectus lobortis condimentum.  Aliquam nonummy <br> auctor massa. 
+            Pellentesque habitant morbi <br> tristique senectus et netus et malesuada  fames <br> ac  
+            turpis egestas. Nulla at risus. Quisque purus <br> magna, auctor  et, sagittis ac, 
+            posuere eu, <br> lectus. Nam mattis, felis ut adipiscing.  Lorem <br> ipsum dolor sit amet, consectetur adipiscing elit. <br>
+            Etiam eget ligula  eu lectus lobortis condimentum. <br> Aliquam nonummy auctor massa.</p>
+    </div>
+
+    
+
+    <div class="footer">
+        <img src="logoIfc.png" class="logoIfc">
+        <div class="opcoesFooter">
+          <p class="logo-insta">
+            Instagram <i class="fa-brands fa-instagram"></i>
+          </p>
+          <p class="logo-email">
+            E-mail <i class="fa-regular fa-envelope"></i>
+          </p>
+          <p class="logo-telefone">
+            Telefone <i class="fa-solid fa-phone"></i>
+          </p>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://kit.fontawesome.com/07d2432083.js" crossorigin="anonymous"></script>
+  <script>
+    // Define o array de cursores
+    const cursores = ['pointer', 'crosshair', 'help', 'wait', 'text'];
+    let indice = 0;
+
+    // Função para iniciar a animação do cursor
+    function iniciarAnimacao(elemento) {
+      const intervalo = setInterval(() => {
+        elemento.style.cursor = cursores[indice];
+        indice = (indice + 1) % cursores.length;
+      }, 200);
+
+      // Evento para interromper a animação ao sair do elemento
+      elemento.addEventListener('mouseleave', () => {
+        clearInterval(intervalo);
+        elemento.style.cursor = 'default';
+        indice = 0;
+      }, { once: true });
+    }
+
+    // Seleciona todos os elementos clicáveis e aplica o evento de animação de cursor
+    document.querySelectorAll('.opcoes p, .saiba-mais, .footer p, .logo').forEach(elemento => {
+      elemento.addEventListener('mouseenter', () => iniciarAnimacao(elemento));
+    });
+  </script>
+
+
+</body>
+</html>
