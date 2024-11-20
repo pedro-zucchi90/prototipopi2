@@ -11,15 +11,20 @@
 </head>
 
 <body>
-  <div class="header">
-    <h1 class="logo" onclick="window.location.href='testes.html'">IMPETUS</h1>
-    <div class="opcoes">
-      <p class="botaoinicio" onclick="window.location.href='testes.html'">Início</p>
-      <p class="botaoplasma" onclick="window.location.href='plasma.html'">Plasma</p>
-      <p class="botaopropulsao" onclick="window.location.href='propulsao.html'">Propulsão</p>
-      <p class="botaoaplicacoes" onclick="window.location.href='aplicacoes.html'">Aplicações</p>
+  <nav>
+    <div class="header">
+      <h1 class="logo" onclick="window.location.href='pagInicial.html'">IMPETUS</h1>
+      <button class="hamburguer" onclick="toggleMenu()">☰</button>
+      <div class="opcoes">
+        <ul>
+          <li class="botaoinicio" onclick="window.location.href='pagInicial.html'">Início</li>
+          <li class="botaoplasma" onclick="window.location.href='plasma.html'">Plasma</li>
+          <li class="botaopropulsao" onclick="window.location.href='propulsao.html'">Propulsão</li>
+          <li class="botaoaplicacoes" onclick="window.location.href='aplicacoes.html'">Aplicações</li>
+        </ul>
+      </div>
     </div>
-  </div>
+  </nav>
 
   <section>
     <div>
@@ -116,7 +121,12 @@
       elemento.addEventListener('mouseenter', () => iniciarAnimacao(elemento));
     });
   </script>
-
+  <script>
+    function toggleMenu() {
+      const opcoes = document.querySelector('.opcoes');
+      opcoes.classList.toggle('active');
+    }
+  </script>
 
 </body>
 
