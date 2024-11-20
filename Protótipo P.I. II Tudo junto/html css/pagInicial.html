@@ -16,15 +16,20 @@
 <body>
   <nav>
     <div class="header">
-      <h1 class="logo" onclick="window.location.href='testes.html'">IMPETUS</h1>
+      <h1 class="logo" onclick="window.location.href='pagInicial.html'">IMPETUS</h1>
+      <button class="hamburguer" onclick="toggleMenu()">☰</button>
       <div class="opcoes">
-        <p class="botaoinicio" onclick="window.location.href='testes.html'">Início</p>
-        <p class="botaoplasma" onclick="window.location.href='plasma.html'">Plasma</p>
-        <p class="botaopropulsao" onclick="window.location.href='propulsao.html'">Propulsão</p>
-        <p class="botaoaplicacoes" onclick="window.location.href='aplicacoes.html'">Aplicações</p>
+        <ul>
+          <li class="botaoinicio" onclick="window.location.href='pagInicial.html'">Início</li>
+          <li class="botaoplasma" onclick="window.location.href='plasma.html'">Plasma</li>
+          <li class="botaopropulsao" onclick="window.location.href='propulsao.html'">Propulsão</li>
+          <li class="botaoaplicacoes" onclick="window.location.href='aplicacoes.html'">Aplicações</li>
+        </ul>
       </div>
     </div>
   </nav>
+  
+
 
   <section class="satelite">
     <img src="satelite1.png">
@@ -150,6 +155,12 @@
     document.querySelectorAll('.opcoes p, .saiba-mais, .footer p, .logo').forEach(elemento => {
       elemento.addEventListener('mouseenter', () => iniciarAnimacao(elemento));
     });
+  </script>
+  <script>
+    function toggleMenu() {
+      const opcoes = document.querySelector('.opcoes');
+      opcoes.classList.toggle('active');
+    }
   </script>
 
 
