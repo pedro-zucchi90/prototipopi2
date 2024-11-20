@@ -1,3 +1,7 @@
+html{
+  cursor: url(cursornormal.png), auto;
+}
+
 body {
     font-family: 'Iceland';
     background-color: #000;
@@ -6,29 +10,94 @@ body {
     background-image: url(fundo\ \(1\).jpeg);
   }
 
+
+/* Newsletter */
+.newsletter {
+  padding: 80px 8%;
+  width: auto;
+}
+
+.newsletter .content {
+  max-width: 100%;
+  text-align: left;
+}
+
+.newsletter .input-group {
+  display: flex;
+  border: 2px solid #fff;
+  border-radius: 17px;
+  overflow: hidden;
+}
+
+.newsletter .content h2 {
+  color: #fff;
+  margin-bottom: 20px;
+  font-size: 5rem;
+}
+
+.newsletter .content p {
+  color: #fff;
+  margin-bottom: 20px;
+  font-size: 3rem;
+}
+
+.newsletter .input-group {
+  display: flex;
+  border: 2px solid #fff;
+  border-radius: 17px;
+  overflow: hidden;
+}
+
+.newsletter .input-group .form-control {
+  flex: 1;
+  height: 70px;
+  border: none;
+  border-radius: 0;
+  font-size: 2rem;
+  padding-left: 15px;
+  background-color: #000;
+  color: #fff;
+}
+
+.newsletter .input-group .btn {
+  height: 70px;
+  border-radius: 0;
+  background-color: #000;
+  color: #fff;
+  font-weight: 400;
+  font-size: 1.5rem;
+  border: none;
+  padding: 0 20px;
+}
+
+.newsletter .input-group .form-control:focus {
+  box-shadow: none;
+}
+
+
 /*header*/
 .opcoes {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    width: 40%;
-    font-size: 40px;
-    cursor: pointer;
-  }
-  
-  .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 10px 6% 0 50px;
-    position: relative;
-  }
-  
-  .logo {
-    margin-left: 6%;
-    cursor: pointer;
-  }
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 40%;
+  font-size: 40px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 6% 0 50px;
+  position: relative;
+}
+
+.logo {
+  margin-left: 6%;
+  cursor: pointer;
+  font-size: 80px;
+}
 
   /*---------Footer------------*/
 .footer {
@@ -68,3 +137,19 @@ body {
     font-size: 55px;
     color: #ffffff;
   }
+
+  /*------propulsão------*/
+  .titulopropulsao{
+    font-size: 5em;
+    margin-top: 0.2em;
+    margin-bottom: 0.4em;
+    text-align: center;
+  }
+
+  .textopropulsao p{
+    max-width: 700px;
+    font-weight: 550;
+    margin-left: 8%;
+  }
+
+  /*------Mapa Mental-----*/
