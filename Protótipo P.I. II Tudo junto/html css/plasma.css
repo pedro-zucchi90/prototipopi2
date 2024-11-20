@@ -74,16 +74,7 @@ body {
 }
 
 
-/*header*/
-.opcoes {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  width: 40%;
-  font-size: 40px;
-}
-
+/* Estilo normal para telas maiores */
 .header {
   display: flex;
   justify-content: space-between;
@@ -96,6 +87,77 @@ body {
   margin-left: 6%;
   cursor: pointer;
   font-size: 80px;
+}
+
+.opcoes {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 40%;
+  font-size: 40px;
+}
+
+.hamburguer {
+  display: none;
+  font-size: 40px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.opcoes ul {
+  list-style: none; 
+  margin: 0;
+  padding: 0;
+  display: flex; 
+  gap: 60px; 
+}
+
+
+/* Regras para telas menores */
+@media (max-width: 768px) {
+  .opcoes {
+    display: none;
+    flex-direction: column; 
+    position: absolute;
+    top: 100%;
+    right: 10px;
+    background-color: #000000;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 1000;
+    border: 2px solid #fff;
+    text-align: center;
+  }
+
+  .opcoes.active {
+    display: flex; 
+  }
+
+  .opcoes ul {
+    flex-direction: column; 
+    gap: 10px; 
+  }
+
+  .opcoes li {
+    padding: 10px 0; 
+    border-bottom: 1px solid white; 
+  }
+
+  .opcoes li:last-child {
+    border-bottom: none; 
+  }
+
+  .hamburguer {
+    display: block;
+    color: white;
+  }
+
+  .logo {
+    font-size: 60px;
+  }
 }
 
   /*---------Footer------------*/
