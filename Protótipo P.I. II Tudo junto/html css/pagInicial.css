@@ -1,9 +1,14 @@
+html{
+  cursor: url(cursornormal.png), auto;
+}
+
 body {
   font-family: 'Iceland';
   background-color: #000;
   color: #fff;
   font-size: 30px;
   background-image: url(fundo\ \(1\).jpeg);
+  cursor: url;
 }
 
 /*header*/
@@ -138,24 +143,25 @@ body {
 
 .plasma_text {
   font-size: 1.2em;
-  width: 60rem
+  width: 70rem
 }
 
 .plasma_text p {
-  margin-top: -25%;
+  margin-top: -22%;
   margin-bottom: 40px;
+  width: 700px;
 }
 
 .plasma_text_h2 {
   font-size: 5em;
   margin-top: 0.2em;
-  margin-bottom: 0.65em;
+  margin-bottom: 0.75em;
 }
 
 .plasma_image {
   position: relative;
   margin-top: 8%;
-  margin-left: 22%;
+  margin-left: 10%;
 }
 
 .plasma_image img {
@@ -173,8 +179,9 @@ body {
 
 .prop_content {
   display: flex;
+  flex-direction: row-reverse;
+  position: relative;
   max-width: 1200px;
-  align-items: center;
   gap: 2em;
 }
 
@@ -192,25 +199,24 @@ body {
 .prop_text_h2 {
   font-size: 5em;
   margin-top: 0.2em;
-  margin-bottom: 0.8em;
+  margin-bottom: 0.5em;
   text-align: right;
 }
 
 .prop_image {
   position: relative;
-  margin-top: 8%;
-  margin-right: 22%;
+  margin-right: 20rem;
 }
 
 .prop_image img{
   width: 500px;
   height: auto;
-  margin-right: 20%;
 }
 
 /*----------Aplicações---------*/
 .aplicacoes {
   display: flex;
+  flex-direction: row;
   margin-top: 5rem;
   margin-left: 8%;
 }
@@ -218,7 +224,6 @@ body {
 .aplic_content {
   display: flex;
   max-width: 1200px;
-  align-items: center;
   gap: 2em;
 }
 
@@ -228,24 +233,20 @@ body {
 }
 
 .aplic_text p {
-  margin-top: -20%;
   margin-bottom: 40px;
 }
 
 .aplic_text_h2 {
   font-size: 5em;
-  margin-top: 0.2em;
-  margin-bottom: 0.8em;
 }
 
 .aplic_image {
   position: relative;
-  margin-top: 8%;
-  margin-left: 22%;
+  margin-left: 13rem;
 }
 
 .aplic_image img {
-  width: 800px;
+  width: 600px;
   height: auto;
 }
 
