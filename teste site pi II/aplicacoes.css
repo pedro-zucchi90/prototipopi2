@@ -1,0 +1,150 @@
+body{
+    font-family: 'Iceland';
+    font-size: 30px;
+    background-color: black;
+    color: white;
+}
+
+.header{
+    margin-left: -20px;
+    margin-top: 10px;
+}
+
+.logo{
+    margin-left: 50px;
+}
+
+.inicio{
+    margin-left: 600px;
+    margin-top: -75px;
+    display: flex;
+}
+
+.plasma{
+    margin-left: 780px;
+    margin-top: -59px;
+}
+
+.propulsao{
+    margin-left: 976px;
+    margin-top: -59px;
+}
+
+.aplicacoes{
+    margin-left: 1190px;
+    margin-top: -59px;
+}
+
+.logo-ifc{
+    margin-left: 50px;
+    margin-top: 450px;
+}
+
+.logo-insta{
+    margin-left: 450px;
+    margin-top: -60px;
+}
+
+.logo-email{
+    margin-left: 800px;
+    margin-top: -60px;
+}
+
+.logo-telefone{
+    margin-left: 1100px;
+    margin-top: -61px;
+}
+
+.titulo-aplicacoes{
+    margin-left: 560px;
+    margin-top: 200px;
+}
+
+.quadrados_legais{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.quadrado_legal1{
+    width: 200px;
+    height: 200px;
+    background-color: #fff;
+    color: black;
+}
+
+.quadrado_legal2{
+    width: 200px;
+    height: 200px;
+    background-color: #fff;
+    color: black;
+}
+
+.quadrado_legal3{
+    width: 200px;
+    height: 200px;
+    background-color: #fff;
+    color: black;
+}
+
+.newsletter {
+    padding: 80px 8%;
+    width: auto;
+  }
+  
+  .newsletter .content {
+    max-width: 100%;
+    text-align: left;
+  }
+  
+  .newsletter .input-group {
+    display: flex;
+    border: 2px solid #fff;
+    border-radius: 17px;
+    overflow: hidden;
+  }
+  
+  .newsletter .content h2 {
+    color: #fff;
+    margin-bottom: 20px;
+    font-size: 5rem;
+  }
+  
+  .newsletter .content p {
+    color: #fff;
+    margin-bottom: 20px;
+    font-size: 3rem;
+  }
+  
+  .newsletter .input-group {
+    display: flex;
+    border: 2px solid #fff;
+    border-radius: 17px;
+    overflow: hidden;
+  }
+  
+  .newsletter .input-group .form-control {
+    flex: 1;
+    height: 70px;
+    border: none;
+    border-radius: 0;
+    font-size: 2rem;
+    padding-left: 15px;
+    background-color: #000;
+    color: #fff;
+  }
+  
+  .newsletter .input-group .btn {
+    height: 70px;
+    border-radius: 0;
+    background-color: #000;
+    color: #fff;
+    font-weight: 400;
+    font-size: 1.5rem;
+    border: none;
+    padding: 0 20px;
+  }
+  
+  .newsletter .input-group .form-control:focus {
+    box-shadow: none;
+  }
