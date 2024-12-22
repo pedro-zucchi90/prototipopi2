@@ -1,0 +1,33 @@
+.titulopropulsao{
+  font-size: 5em;
+  margin-top: 0.2em;
+  margin-bottom: 0.4em;
+  text-align: center;
+  
+}
+.textopropulsao p{
+  max-width: 1000px;
+  font-weight: 550;
+  margin-left: 8%;
+}
+  /*------Mapa Mental-----*/
+
+@media (max-width: 768px) {
+
+  /*------propulsão------*/
+  .titulopropulsao{
+    font-size: 3em;
+    margin-top: 0.2em;
+    margin-bottom: 0.4em;
+    text-align: center;
+  }
+
+  .textopropulsao p{
+    max-width: 100%;
+    font-weight: 550;
+    margin: 0 8% 0 8%;
+    text-align: justify;
+  }
+}
+
+  /*------Mapa Mental Mobile-----*/
